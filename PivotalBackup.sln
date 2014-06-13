@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PivotalBackup", "PivotalBac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PivotalTrackerDotNet", "ext\PivotalTracker.NET\PivotalTrackerDotNet\PivotalTrackerDotNet.csproj", "{579B9125-0944-4C30-A31F-6C70A0DDE1C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PivotalBackup.Tests", "PivotalBackupTests\PivotalBackup.Tests.csproj", "{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,16 +35,6 @@ Global
 		{579B9125-0944-4C30-A31F-6C70A0DDE1C8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{579B9125-0944-4C30-A31F-6C70A0DDE1C8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{579B9125-0944-4C30-A31F-6C70A0DDE1C8}.Release|x86.ActiveCfg = Release|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{52BB4D7A-3842-4194-9C8B-7016F9BB2C2E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
