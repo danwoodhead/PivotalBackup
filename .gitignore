@@ -1,0 +1,7 @@
+packages/
+*.user
+*.suo
+*.ncrunchsolution
+**/token.txt
+**/bin/*
+**/obj/*
