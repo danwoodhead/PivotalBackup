@@ -16,10 +16,24 @@ namespace PivotalBackup {
             myStoryService = new StoryService(GetPivotalAuthToken());
             var projectsToBackup = GetProjectsToBackup();
 
+            foreach (var project in projectsToBackup) {
+                var backupData = new BackupData(project) {Stories = myStoryService.GetAllStories(project.Id)};
+                backupData.SetBackupFilePath();
+                CreateJsonBackup(backupData);
+            }
+
             // serialize http://james.newtonking.com/json/help/index.html
         }
 
-       static string GetPivotalAuthToken() {
+        private static void CreateJsonBackup(BackupData backupData) {
+            using (var fs = File.OpenWrite(backupData.BackupFilePath)) {
+                
+            }
+        }
+        
+
+        
+        static string GetPivotalAuthToken() {
             return File.ReadAllText("token.txt"); ;
         }
 
@@ -34,6 +48,8 @@ namespace PivotalBackup {
                 Convert.ToInt32(ConfigurationManager.AppSettings["homeBacklogID"])
             };
         }
+
+
 
         //private void GetAndBackupStories(int projectId) {
         //    var stories = storyService.GetAllStories(projectId, 6, 0);
